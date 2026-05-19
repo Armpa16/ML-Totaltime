@@ -1,0 +1,64 @@
+# configs/features.yaml
+# เลือกฟีเจอร์ที่จะใช้หรือไม่ได้ใช้ในการเทรนโมเดล (True = ใช้, False = ไม่ใช้)
+
+features:
+  # === Categories / IDs ===
+  PlantName: False
+  PickListType: True
+  TruckSeqNo: True
+  CarType: True
+  PrepareForward: True
+  PostLocationName: True
+
+  # === Amounts / SAP ===
+  CPACTileSapAmount: False
+  PRESTIGETileSapAmount: False
+  NEUSTILETileSapAmount: False
+  CPACFittingSapAmount: False
+  PRESTIGEFittingSapAmount: False
+  NEUSTILEFittingSapAmount: False
+  DURAFittingSapAmount: False
+  ACCESSORIESSapAmount: False
+
+  # === Time / Date features ===
+  hour: True
+  day_of_week: True
+  is_weekend: True
+  month: True
+  week_of_month: True
+  time_of_day: True
+
+  # === Aggregated / Calculated ===
+  total_tile_amount: True
+  total_fitting_amount: True
+  total_accessories_amount: True
+  CPAC: False
+  PRESTIGE: False
+  NEUSTILE: False
+  FITTING: False
+  ACCESSORIES: False
+  has_tile: False
+  has_fitting: False
+  has_accessories: False
+  product_group_count: True
+  total_sap_amount: True
+  log_total_sap: False
+  avg_loading_rate_by_car: False
+  queue_length: True
+  estimated_base_load_time: False
+  is_overload_proxy: False
+  product_mix_ratio: True
+  cross_zone_flag: True
+  concurrent_trucks_loading: True
+
+  # === Interactions ===
+  complexity_x_congestion: True
+  workload_x_time_of_day: True
+  prepare_overhead_interaction: False
+
+  # === Text / Non-numeric (ไม่สามารถใช้เทรนได้โดยตรง) ===
+  TruckReceiveDate: False
+  CreateDate: False
+  PickingTime: False
+  TruckStatus: False
+  PackListStatus: False

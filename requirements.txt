@@ -1,0 +1,12 @@
+jupyterlab>=4.0
+notebook>=7.0
+ipykernel>=6.0
+numpy>=1.26
+pandas>=2.0
+matplotlib>=3.8
+seaborn>=0.13
+scikit-learn>=1.4
+pyyaml>=6.0
+optuna>=3.0
+shap>=0.44
+catboost>=1.2
