@@ -1,0 +1,6 @@
+Model,Train MAE,Test MAE,Train RMSE,Test RMSE,Train R²,Test R²,Overfit Gap
+LightGBM (Optuna),9.75,11.54,12.385,14.65,0.68,0.56,0.12
+XGBoost (Optuna),9.63,11.55,12.242,14.69,0.69,0.56,0.13
+CatBoost (Optuna),9.95,11.58,12.651,14.69,0.66,0.56,0.11
+RF (tuned),5.26,11.74,6.832,14.85,0.9,0.55,0.35
+Baseline (best),11.87,12.18,15.088,15.37,0.52,0.52,0.01

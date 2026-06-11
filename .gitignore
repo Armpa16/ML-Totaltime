@@ -15,18 +15,23 @@ env/
 
 # Data
 data/raw/*
-# data/interim/*
-# data/processed/*
-# data/external/*
+data/interim/*
+data/processed/*
+data/external/*
 !data/raw/.gitkeep
 !data/interim/.gitkeep
 !data/processed/.gitkeep
 !data/external/.gitkeep
-data/raw/PalletLogs.csv
+!data/raw/*.csv
+!data/interim/*.csv
+!data/processed/*.csv
 catboost_info/
+PostLocations.csv
+Plants.csv
+
 
 # Models and reports
-models/*
+!models/*
 reports/figures/*
 !models/.gitkeep
 !reports/figures/.gitkeep
