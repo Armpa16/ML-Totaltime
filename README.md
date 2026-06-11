@@ -111,8 +111,8 @@ train.csv  test.csv
 
 | Notebook | ทำอะไร | Input | Output |
 | --- | --- | --- | --- |
-| `01_ViewRawData` | สำรวจ schema, missing values, dtype | `vwTimeStampDashboard_v3.csv` | — |
-| `02_TransFormData` | แปลง datetime → float, คำนวณ wait/prepare/loading/close_job_min, encode CarType/PickListType | `vwTimeStampDashboard_v3.csv` | `vw_timestamp_dashboard_transformed.csv` |
+| `01_ViewRawData` | สำรวจ schema, missing values, dtype | `vwTimeStampDashboard.csv` | — |
+| `02_TransFormData` | แปลง datetime → float, คำนวณ wait/prepare/loading/close_job_min, encode CarType/PickListType | `vwTimeStampDashboard.csv` | `vw_timestamp_dashboard_transformed.csv` |
 | `03_CleanData` | ลบแถวที่มี null ใน columns สำคัญ, ลบ duplicate, กรอง phase time ที่ติดลบ | `..._transformed.csv` | `vw_timestamp_dashboard_clean.csv` |
 | `04_FeatureEngineering` | สร้าง time features (hour/dow/month), queue features, rolling avg, interaction terms | `..._clean.csv` | `vw_timestamp_dashboard_featured.csv` |
 | `05_EDA_TotalTime` | วิเคราะห์ข้อมูล Plot distribution, skewness, correlation ของ total_time_min กับทุก feature | `..._featured.csv` | — (figures) |
